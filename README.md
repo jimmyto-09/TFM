@@ -15,17 +15,13 @@ El tráfico VoIP se enruta por la red corporativa MPLS simulada, mientras que el
 
 ## 📂 Estructura del repositorio
 
-```bash
+```
 .
 ├── variables.tf
 ├── locals.tf
 ├── vnf-access.tf
 ├── vnf-cpe.tf
-├── vnf-wan.tf          # Ryu embebido y bridges OVS
-├── rules/
-│   ├── common.json     # reglas base
-│   └── to-voip.json    # reglas específicas de sitio/servicio
-├── scripts/
-│   └── inject_rules.sh # inyección automática vía REST/FlowManager
-└── README.md
+├── vnf-wan.tf          # Ryu embebido 
+├── apply_flow.sh # inyección automática vía REST/
+
 
